@@ -15,7 +15,7 @@ def callback(msg1, msg2):
     rospy.sleep(10)
 
 def main():
-  rospy.init_node("chime_no1_node")
+  rospy.init_node("chime_no2_node")
 
   print("お客様がご来店されたら入店音を鳴らします。")
   
