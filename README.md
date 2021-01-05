@@ -2,8 +2,8 @@
   
 ## 概要  
   
-ロボットシステム学の課題2で作成した人感チャイムです。  
-ROSとUSBカメラを用いて人を検出し、コンビニやレストランの入口のチャイムのような音を鳴らします。
+ロボットシステム学の課題2で作成したROSを用いた人感チャイムです。  
+USBカメラとOpenCVを用いて人を検出し、コンビニやレストランの入口のチャイムのような音を鳴らします。
   
 ---  
   
@@ -70,4 +70,7 @@ rosrun detect_human_chime detect_human.py
 ---
   
 ## LICENSE
-This repository is licensed under The BSD 3-Clause License, see [LICENSE](https://github.com/Dansato1203/detect_human_chime/blob/master/LICENSE).
+This repository is licensed under The BSD 3-Clause License, see [LICENSE](https://github.com/Dansato1203/detect_human_chime/blob/master/LICENSE).  
+  
+The sample chime in this repository is from [OtoLogic](https://otologic.jp/).  
+See [here](https://otologic.jp/free/license.html) for details.
