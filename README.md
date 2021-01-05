@@ -15,7 +15,7 @@ ROSとUSBカメラを用いて人を検出し、コンビニやレストラン�
 　- ROS Distribution: Melodic Morenia 1.14.3  
 - [usb-cam](http://wiki.ros.org/usb_cam)  
 - [OpenCV (version 3.4.3)](https://opencv.org/)  
--python 2.7.17  
+- python 2.7.17  
   
 また、USBカメラは[logicool c270n](https://www.logicool.co.jp/ja-jp/product/hd-webcam-c270n)を用いて動作を確認しています。  
   
