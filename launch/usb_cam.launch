@@ -2,7 +2,7 @@
   <!--  usb_camノードを実行する   -->
   <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen">
         <remap from="/usb_cam/image_raw" to="/usb_cam/image_raw"/>
-        <param name="video_device" value="/dev/video2" />
+        <param name="video_device" value="/dev/video0" />
         <param name="image_width" value="640" />
         <param name="image_height" value="480" />
         <param name="pixel_format" value="yuyv" />
