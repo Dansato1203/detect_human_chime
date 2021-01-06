@@ -69,6 +69,18 @@ rosrun detect_human_chime detect_human.py
   
 ---
   
+### 注意点
+  
+実行する場合、サンプルコードのdetect_human.py、01_chime.py、02_chime.py、03_chime.py内の下記の部分のファイルまでのパスを変更してください。  
+- ファイルまでのパス  
+- 01_chime.py(02,03も同様)
+`playsound("/home/dan/catkin_ws/src/detect_human_chime/scripts/konnbini.mp3")`  
+  
+- detect_human.py  
+`faceCascade　=　cv2.CascadeClassifier('/home/dan/catkin_ws/src/detect_human_chime/scripts/haarcascade_frontalface_alt2.xml')`  
+  
+---
+  
 ## LICENSE
 This repository is licensed under The BSD 3-Clause License, see [LICENSE](https://github.com/Dansato1203/detect_human_chime/blob/master/LICENSE).  
   
