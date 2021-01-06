@@ -71,13 +71,17 @@ rosrun detect_human_chime detect_human.py
   
 ### 注意点
   
-実行する場合、各サンプルコード内の下記部分のファイルまでのパスを自分の環境に合わせ変更してください。  
+1. 実行する場合、各サンプルコード内の下記部分のファイルまでのパスを自分の環境に合わせ変更してください。  
   
 - 01_chime.py (02,03も同様)  
 `playsound("/home/dan/catkin_ws/src/detect_human_chime/scripts/konnbini.mp3")`  
   
 - detect_human.py  
 `faceCascade = cv2.CascadeClassifier('/home/dan/catkin_ws/src/detect_human_chime/scripts/haarcascade_frontalface_alt2.xml')`  
+  
+2. launchファイル中の下記部分を確認したUSBカメラのデバイス番号に変更してください。    
+`<param name="video_device" value="/dev/video0" />`  
+
   
 ---
   
