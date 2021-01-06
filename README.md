@@ -77,7 +77,7 @@ rosrun detect_human_chime detect_human.py
 `playsound("/home/dan/catkin_ws/src/detect_human_chime/scripts/konnbini.mp3")`  
   
 - detect_human.py  
-`faceCascade=cv2.CascadeClassifier('/home/dan/catkin_ws/src/detect_human_chime/scripts/haarcascade_frontalface_alt2.xml')`  
+`faceCascade　=　cv2.CascadeClassifier('/home/dan/catkin_ws/src/detect_human_chime/scripts/haarcascade_frontalface_alt2.xml')`  
   
 2. launchファイル中の下記部分を確認したUSBカメラのデバイス番号に変更してください。    
 `<param name="video_device" value="/dev/video0" />`  
