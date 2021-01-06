@@ -77,7 +77,7 @@ rosrun detect_human_chime detect_human.py
 `playsound("/home/dan/catkin_ws/src/detect_human_chime/scripts/konnbini.mp3")`  
   
 - detect_human.py  
-`faceCascade　=　cv2.CascadeClassifier('/home/dan/catkin_ws/src/detect_human_chime/scripts/haarcascade_frontalface_alt2.xml')`  
+`faceCascade = cv2.CascadeClassifier('/home/dan/catkin_ws/src/detect_human_chime/scripts/haarcascade_frontalface_alt2.xml')`  
   
 ---
   
