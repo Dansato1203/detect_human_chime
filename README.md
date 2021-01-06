@@ -71,9 +71,9 @@ rosrun detect_human_chime detect_human.py
   
 ### 注意点
   
-実行する場合、サンプルコードのdetect_human.py、01_chime.py、02_chime.py、03_chime.py内の下記の部分のファイルまでのパスを変更してください。  
-- ファイルまでのパス  
-- 01_chime.py(02,03も同様)
+実行する場合、各サンプルコード内の下記部分のファイルまでのパスを自分の環境に合わせ変更してください。  
+  
+- 01_chime.py (02,03も同様)  
 `playsound("/home/dan/catkin_ws/src/detect_human_chime/scripts/konnbini.mp3")`  
   
 - detect_human.py  
