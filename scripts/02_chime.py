@@ -11,8 +11,8 @@ def callback(msg1, msg2):
   det_face = msg1.data
   if det_face == 1:
     print('お客様が{0}名でご来店されました。'.format(msg2.data))
-    playsound("/home/dan/catkin_ws/src/detect_human_chime/scripts/konnbini_02.mp3")
-    rospy.sleep(10)
+    playsound("/home/dan/catkin_ws/src/detect_human_chime/scripts/konnbini_2.mp3")
+    rospy.sleep(5)
 
 def main():
   rospy.init_node("chime_no2_node")
