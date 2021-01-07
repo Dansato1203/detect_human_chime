@@ -24,14 +24,19 @@ class image_converter:
        print(e)
 
 
+     #分類器までのパス
      faceCascade = cv2.CascadeClassifier('/home/dan/catkin_ws/src/detect_human_chime/scripts/haarcascade_frontalface_alt2.xml')
 
+     #グレースケール
      gray = cv2.cvtColor(cv_image, cv2.COLOR_BGR2GRAY)
 
+     #顔判定
      face = faceCascade.detectMultiScale(gray,1.1,3,minSize=(50,50))
 
+     #フラッグ 顔があれば1, なければ0をパブリッシュする
      flag = 1
 
+     #顔周りに四角
      if len(face) > 0:
        for rect in face:
          cv2.rectangle(cv_image, tuple(rect[0:2]), tuple(rect[0:2]+rect[2:4]), (255, 255, 255), thickness=2)
