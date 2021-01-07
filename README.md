@@ -25,7 +25,7 @@ USBカメラとOpenCVを用いて人を検出し、コンビニやレストラ�
   
 1. 本パッケージをインストールします。  
   
-```
+```sh
 cd ~/catkin_ws/src  
 git clone https://github.com/Dansato1203/detect_human_chime.git  
 cd ~/catkin_ws
@@ -84,7 +84,7 @@ faceCascade　=　cv2.CascadeClassifier('/home/dan/catkin_ws/src/detect_human_ch
 <param name="video_device" value="/dev/video0" />  
 ```
   
---
+---
   
 ## LICENSE
 This repository is licensed under The BSD 3-Clause License, see [LICENSE](https://github.com/Dansato1203/detect_human_chime/blob/master/LICENSE).  
