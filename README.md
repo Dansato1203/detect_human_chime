@@ -25,7 +25,7 @@ USBカメラとOpenCVを用いて人を検出し、コンビニやレストラ�
   
 1. 本パッケージをインストールします。  
   
-```sh
+```
 cd ~/catkin_ws/src  
 git clone https://github.com/Dansato1203/detect_human_chime.git  
 cd ~/catkin_ws
@@ -33,11 +33,11 @@ catkin_make
 ```  
   
 2. pythonでサウンドを扱うため、playsoundをインストールします。  
-```sh
+```
 pip install playsound
 ```
 3. usb-camをインストールします。  
-```sh
+```
 sudo apt-get update
 sudo apt-get install ros-melodic-usb-cam
 ```
@@ -47,18 +47,18 @@ sudo apt-get install ros-melodic-usb-cam
 ## 実行方法  
   
 1. usb-camを立ち上げます。  
-```sh
+```
 roslaunch detect_human_chime usb_cam.launch  
 ```
   
 2. 本パッケージのチャイムを鳴らすサンプルコードを実行します。  
 チャイム音が違う３つのコードを準備しています。どれか一つを実行してください。  
-```sh
+```
 rosrun detect_human_chime 01_chime.py
 ```
   
 3. 本パッケージの人を検知するサンプルコードを実行します。  
-```sh
+```
 rosrun detect_human_chime detect_human.py
 ```
   
@@ -70,17 +70,17 @@ rosrun detect_human_chime detect_human.py
 1. 各サンプルコード内の下記部分のファイルまでのパスを自分の環境に合わせ変更してください。  
   
 - 01_chime.py (02,03も同様)  
-```py
+```py:01_chime.py
 playsound("/home/dan/catkin_ws/src/detect_human_chime/scripts/konnbini.mp3")
 ```
   
 - detect_human.py  
-```py
+```py:detect_human.py
 faceCascade　=　cv2.CascadeClassifier('/home/dan/catkin_ws/src/detect_human_chime/scripts/haarcascade_frontalface_alt2.xml')
 ```
   
 2. launchファイル中の下記部分を確認したUSBカメラのデバイス番号に変更してください。    
-```
+```:usb_cam.launch
 <param name="video_device" value="/dev/video0" />  
 ```
   
