@@ -84,7 +84,7 @@ faceCascade　=　cv2.CascadeClassifier('/home/dan/catkin_ws/src/detect_human_ch
 <param name="video_device" value="/dev/video0" />  
 ```
   
-デバイス番号は以下のコマンドで確認できます。  
+　 デバイス番号は以下のコマンドで確認できます。  
 ```sh
 ls /dev/video*
 ```  
