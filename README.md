@@ -46,23 +46,18 @@ sudo apt-get install ros-melodic-usb-cam
   
 ## 実行方法  
   
-1. USBカメラのデバイス番号を確認します。
-```sh
-ls dev/video*
-```
-
-2. usb-camを立ち上げます。  
+1. usb-camを立ち上げます。  
 ```sh
 roslaunch detect_human_chime usb_cam.launch  
 ```
   
-3. 本パッケージのチャイムを鳴らすサンプルコードを実行します。  
+2. 本パッケージのチャイムを鳴らすサンプルコードを実行します。  
 チャイム音が違う３つのコードを準備しています。どれか一つを実行してください。  
 ```sh
 rosrun detect_human_chime 01_chime.py
 ```
   
-4. 本パッケージの人を検知するサンプルコードを実行します。  
+3. 本パッケージの人を検知するサンプルコードを実行します。  
 ```sh
 rosrun detect_human_chime detect_human.py
 ```
@@ -71,19 +66,25 @@ rosrun detect_human_chime detect_human.py
   
 ### 注意点
   
-1. 実行する場合、各サンプルコード内の下記部分のファイルまでのパスを自分の環境に合わせ変更してください。  
+実行する場合、下記の２点に注意してください。  
+1. 各サンプルコード内の下記部分のファイルまでのパスを自分の環境に合わせ変更してください。  
   
 - 01_chime.py (02,03も同様)  
-`playsound("/home/dan/catkin_ws/src/detect_human_chime/scripts/konnbini.mp3")`  
+```py
+playsound("/home/dan/catkin_ws/src/detect_human_chime/scripts/konnbini.mp3")
+```
   
 - detect_human.py  
-`faceCascade　=　cv2.CascadeClassifier('/home/dan/catkin_ws/src/detect_human_chime/scripts/haarcascade_frontalface_alt2.xml')`  
+```py
+faceCascade　=　cv2.CascadeClassifier('/home/dan/catkin_ws/src/detect_human_chime/scripts/haarcascade_frontalface_alt2.xml')
+```
   
 2. launchファイル中の下記部分を確認したUSBカメラのデバイス番号に変更してください。    
-`<param name="video_device" value="/dev/video0" />`  
-
+```
+<param name="video_device" value="/dev/video0" />  
+```
   
----
+--
   
 ## LICENSE
 This repository is licensed under The BSD 3-Clause License, see [LICENSE](https://github.com/Dansato1203/detect_human_chime/blob/master/LICENSE).  
