@@ -91,6 +91,14 @@ ls /dev/video*
   
 ---
   
+### デモ動画
+  
+以下の画像からyoutubeにあがっているデモ動画に飛べます。  
+  
+[![デモ動画](C:https://github.com/Dansato1203/images/blob/master/robosys_ros/small.png)](https://www.youtube.com/watch?v=CqVocvT59tg)  
+  
+---
+  
 ## LICENSE
 This repository is licensed under The BSD 3-Clause License, see [LICENSE](https://github.com/Dansato1203/detect_human_chime/blob/master/LICENSE).  
   
