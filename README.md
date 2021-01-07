@@ -95,7 +95,7 @@ ls /dev/video*
   
 以下の画像からyoutubeにあがっているデモ動画に飛べます。  
   
-[![デモ動画](https://github.com/Dansato1203/images/blob/master/robosys_ros/small.png width=500px)](https://www.youtube.com/watch?v=CqVocvT59tg)  
+[<img src=https://github.com/Dansato1203/images/blob/master/robosys_ros/small.png width=500px>](https://www.youtube.com/watch?v=CqVocvT59tg)  
   
 ---
   
